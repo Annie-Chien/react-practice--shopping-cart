@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-practice--shopping-cart/static/css/main.5fd7551d.css",
+    "main.js": "/react-practice--shopping-cart/static/js/main.8b412c1c.js",
+    "index.html": "/react-practice--shopping-cart/index.html",
+    "main.5fd7551d.css.map": "/react-practice--shopping-cart/static/css/main.5fd7551d.css.map",
+    "main.8b412c1c.js.map": "/react-practice--shopping-cart/static/js/main.8b412c1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fd7551d.css",
+    "static/js/main.8b412c1c.js"
+  ]
+}
