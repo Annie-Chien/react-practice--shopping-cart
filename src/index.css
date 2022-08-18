@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #f4f1de;
+  --main-color-darker: #f2cc8f;
+  /* --sub-color: #e07a5f; */
+  --sub-color: #eed7c5;
+  --font-main-color: #3d405b;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--main-color);
+  color: var(--font-main-color);
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(35, 36, 52, 0.2);
+}
+h2 {
+  font-size: 2rem;
+  margin: 0.6em 0;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p,
+span {
+  font-size: 1.7rem;
+}
+button {
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+/* LOADING */
+.loading {
+  font-size: 8rem;
+}
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--main-color-darker);
+  display: flex;
+  padding: 1.5em;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 2px 5px rgba(203, 158, 87, 0.3);
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(203, 158, 87);
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  transition: all 0.25s;
+  box-shadow: 0 5px 2px rgba(203, 158, 87, 0.3);
+}
+
+.cart:hover {
+  background-color: rgb(157, 122, 66);
+}
+.icon {
+  font-size: 4rem;
+}
+
+.cart span {
+  font-size: 2rem;
+}
+
+/* main */
+.main {
+  width: 95%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+}
+
+/* PRODUCTS */
+.product-list {
+  padding-top: 5rem;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filter-btns {
+  margin: 2rem 0;
+  padding: 0rem 2rem;
+
+  /* background-color: #f2cc8f; */
+}
+
+.filter-btn {
+  text-transform: capitalize;
+  background-color: #3d405b;
+  color: #f4f1de;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 2px 5px 5px #11121a48;
+  transition: all 0.25s;
+}
+
+.filter-btn:active {
+  box-shadow: 2px 2px 4px #11121a6c;
+}
+
+.product {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 1em;
+  margin-bottom: 2rem;
+  width: 28rem;
+  max-width: 28rem;
+  box-shadow: 3px 3px 6px rgba(113, 111, 101, 0.269);
+}
+.product .img-container {
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+}
+.product-info {
+  margin-top: 1em;
+}
+
+.product-info span {
+  display: inline-block;
+  padding: 0.2rem 1.2rem;
+  background-color: #f4f1de;
+  border-radius: 1em;
+  font-size: 1.5rem;
+}
+
+.product-info p {
+  color: #804332;
+  font-weight: bolder;
+}
+
+.btn-container {
+  display: flex;
+  background-color: rgb(203, 158, 87);
+  border-radius: 1.5rem;
+  margin: 1em 0;
+}
+
+.btn-container input {
+  width: 40%;
+  text-align: center;
+  outline: none;
+}
+
+.btn {
+  width: 30%;
+  border: none;
+  background-color: transparent;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+}
+.addToCart {
+  margin-top: 1rem;
+  background-color: #eed7c5;
+  border: none;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  transition: all 0.25s;
+  border-radius: 0.5rem;
+}
+.addToCart:hover {
+  background-color: #e8b791d5;
+}
+
+/* BASKETS */
+.basket {
+  position: fixed;
+  top: 8rem;
+  right: 0;
+  background-color: var(--sub-color);
+  border-radius: 10px;
+  width: 40%;
+  height: 60vh;
+  margin-top: 5rem;
+  padding: 0.5rem 1rem;
+}
+
+.basket-items {
+  background-color: #b4b2ac49;
+  height: 80%;
+  overflow: scroll;
+  padding: 0.5rem 1rem;
+}
+
+.item {
+  /* outline: 2px solid green; */
+  border-bottom: 3px dotted #3d405b;
+  padding-bottom: 1rem;
+}
+.item-info {
+  position: relative;
+}
+.item-info button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #b4b2ac;
+}
+.item-info button:hover {
+  background-color: rgba(180, 178, 172, 0.705);
+}
+.item-info span {
+  padding: 0 1rem;
+}
+.remove-icon {
+  margin-left: 1rem;
+}
+.price {
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+  background-color: #3d405b;
+  color: #eed7c5;
+}
+
+.total {
+  background-color: #3d405b;
+  color: #eed7c5;
+}
