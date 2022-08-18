@@ -1,3 +1,5 @@
 ### [React Practice] Building a shopping cart
 
-fake store API: https://fakestoreapi.com;
+use fake store API: https://fakestoreapi.com;
+
+[Live demo](https://annie-chien.github.io/react-practice--shopping-cart/) 
